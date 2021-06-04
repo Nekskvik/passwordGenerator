@@ -72,7 +72,7 @@ video{
     right: -25%;
     width: 250px;
     height: 100%;
-    background: url(/secur.png) no-repeat;
+    background: url(secur.png) no-repeat;
     background-size: contain;
 }
   
