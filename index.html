@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Генератор пароля</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video src="Hacking.mp4" autoplay loop></video>
+    <div class="wrapper">  
+        <div class="container">
+            <h1 class="title">Генератор пароля</h1>
+            <h3  class="password-display" id="passwordDisplay">Будущий пароль</h3>
+            <form id="passwordGeneratorForm" class="form">
+                <label for="characterAmountNumber">Количество значений</label>
+                <div class="character-amount-container">
+                    <input type="range" min="1" max="70" id="characterAmountRange" value="10">
+                    <input type="number" min="1" max="70" id="characterAmountNumber" value="10">
+                </div>       
+                <label for="includeUppercase">Добавить заглавные</label>
+                <input type="checkbox" id="includeUppercase">
+                <label for="includeNumbers">Добавить цифры</label>
+                <input type="checkbox" id="includeNumbers">
+                <label for="includeSymbols">Добавить символы</label>
+                <input type="checkbox" id="includeSymbols">
+                <button type="submit" class="btn">Сгенерировать надежный пароль</button>
+            </form>
+            <button id="copyToClipBoard">Копировать</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
